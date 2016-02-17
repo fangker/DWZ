@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    </script>
+    <style>
+        body{
+            font-size:16px;
+        }
+        .form-horizontal{
+            text-align: center;
+        }
+        .input-prepend{
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+
+<% if(user){ %>
+<span>欢迎<%= user %>登录</span>
+<a href="/log"><input type="button" class="btn btn-sm" value="登出"></a>
+<% }else{ %>
+<span>请先登录！</span>
+<a href="/log"><input type="button" class="btn btn-sm" value="登录"></a>
+<% } %>
+<form   action="/"  method="post" class="form-horizontal">
+    <div class="control-group">
+        <label class="control-label" for="inputSite">长网址：</label>
+        <input type="text" id="inputSite" name="inputSite" placeholder="please enter long site">
+    </div>
+    <div class="input-prepend">
+        <span class="add-on">http://a.bc/</span>
+        <input type="text" name="inputNumber" placeholder="请输入数字:">
+    </div>
+    <input type="submit" class="btn btn-info btn-sm" value="提交">
+</form>
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type='text/javascript' src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

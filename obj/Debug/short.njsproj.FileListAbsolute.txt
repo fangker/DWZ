@@ -1,0 +1,2 @@
+E:\DWZ\short\short\obj\Debug\short.njsprojResolveAssemblyReference.cache
+E:\DWZ\short\short\bin\Microsoft.NodejsTools.WebRole.dll

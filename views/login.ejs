@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    </script>
+    <style>
+        .form-horizontal{
+            width:400px;
+            height:200px;
+            margin:200px auto;
+        }
+        .btns{
+            margin:30px 100px 30px 130px;
+        }
+        .center{
+            margin:auto;
+            text-align:center;
+            width:200px;
+            background:#00B7FF;
+        }
+    </style>
+</head>
+<body>
+<% if(success){ %>
+<div class="center"><%= success %></div>
+<% } %>
+<% if(error){ %>
+<div class="center"><%= error %></div>
+<% } %>
+<form class="form-horizontal" method="post">
+    <div class="control-group">
+        <label class="control-label" for="inputName">用户名：</label>
+        <div class="controls">
+            <input type="text" class="form-control" id="inputName" name="inputName" placeholder="please enter name:">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="inputPwd">密码：</label>
+        <div class="controls">
+            <input class="form-control" type="password" id="inputPwd" name="inputPwd" placeholder="please enter password:">
+        </div>
+    </div>
+    <div class="control-group btns">
+        <input class="btn-primary btn-sm" type="submit" class="btn" value="login">
+        <input type="button" class="btn-info btn-sm" value="regOn" >
+    </div>
+</form>
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script type='text/javascript' src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
